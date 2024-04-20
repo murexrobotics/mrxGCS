@@ -1,0 +1,55 @@
+find_package(Qt6 REQUIRED COMPONENTS Core Qml)
+
+add_custom_target(FlightDisplayQml
+	SOURCES
+		DefaultChecklist.qml
+		FixedWingChecklist.qml
+		FlightDisplayViewDummy.qml
+		FlightDisplayViewUVC.qml
+		FlightDisplayViewVideo.qml
+		FlyView.qml
+		FlyViewCustomLayer.qml
+		FlyViewInstrumentPanel.qml
+		FlyViewMap.qml
+		FlyViewMissionCompleteDialog.qml
+		FlyViewPreFlightChecklistPopup.qml
+		FlyViewToolStrip.qml
+		FlyViewToolStripActionList.qml
+		FlyViewVideo.qml
+		FlyViewWidgetLayer.qml
+		GripperMenu.qml
+		GuidedActionActionList.qml
+		GuidedActionConfirm.qml
+		GuidedActionGripper.qml
+		GuidedActionLand.qml
+		GuidedActionList.qml
+		GuidedActionPause.qml
+		GuidedActionRTL.qml
+		GuidedActionsController.qml
+		GuidedActionTakeoff.qml
+		GuidedToolStripAction.qml
+		GuidedValueSlider.qml
+		MultiRotorChecklist.qml
+		MultiVehicleList.qml
+		ObstacleDistanceOverlay.qml
+		ObstacleDistanceOverlayMap.qml
+		ObstacleDistanceOverlayVideo.qml
+		PreFlightBatteryCheck.qml
+		PreFlightCheckList.qml
+		PreFlightCheckListShowAction.qml
+		PreFlightGPSCheck.qml
+		PreFlightRCCheck.qml
+		PreFlightSensorsHealthCheck.qml
+		PreFlightSoundCheck.qml
+		ProximityRadarValues.qml
+		ProximityRadarVideoView.qml
+		RoverChecklist.qml
+		SubChecklist.qml
+		TelemetryValuesBar.qml
+		TerrainProgress.qml
+		VehicleWarnings.qml
+		VirtualJoystick.qml
+		VTOLChecklist.qml
+        FlyViewBottomRightRowLayout.qml
+        FlyViewTopRightColumnLayout.qml
+)
