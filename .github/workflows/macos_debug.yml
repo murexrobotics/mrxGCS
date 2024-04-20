@@ -80,6 +80,10 @@ jobs:
               cmake --build ${{ runner.temp }}/shadow_build_dir/ --target all --config Debug
               cmake --install ${{ runner.temp }}/shadow_build_dir
 
+      - name: Upload Build File
+        uses: ./.github/actions/upload
+        with:
+          artifact_name: ${{ env.ARTIFACT }}
       # - name: Run unit tests
       #  working-directory: ${{ runner.temp }}/shadow_build_dir
       #  run: open ${{ runner.temp }}/shadow_build_dir/staging/QGroundControl.app --args --unittest
