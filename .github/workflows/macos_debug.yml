@@ -78,7 +78,7 @@ jobs:
         working-directory: ${{ runner.temp }}/shadow_build_dir
         run:  |
             export JOBS=$((`sysctl -n hw.ncpu`+1))
-            qmake -r ${SOURCE_DIR}/qgroundcontrol.pro CONFIG+=debug CONFIG+=installer CONFIG+=${BUILD_TYPE} QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"
+            qmake -r ${SOURCE_DIR}/qgroundcontrol.pro CONFIG+=debug CONFIG+=installer QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"
             make -j$JOBS
 
       - name: Upload Build File
